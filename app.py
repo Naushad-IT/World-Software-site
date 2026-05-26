@@ -9,7 +9,7 @@ PRODUCTS = [
     {
         "name": "Windows 11 Pro Retail Key",
         "category": "Operating System",
-        "price": "45 SAR",
+        "price": "Not Available",
         "status": "In Stock",
         "description": "Original lifetime activation digital key with official support."
     },
@@ -20,16 +20,16 @@ PRODUCTS = [
         "description": "Original and Geniun work."
     },
     {
-        "name": "Microsoft Office 2021 Pro Plus",
+        "name": "Microsoft Office 2021 ad 2024 Pro Plus",
         "category": "Productivity",
-        "price": "69 SAR",
+        "price": "Not Available",
         "status": "In Stock",
         "description": "Full version lifetime bind key for 1 PC."
     },
     {
         "name": "Internet Security Antivirus (1 Year)",
         "category": "Cybersecurity",
-        "price": "25 SAR",
+        "price": "55 SAR",
         "status": "In Stock",
         "description": "Complete protection against malware, ransomware, and phishing."
     },
@@ -41,9 +41,9 @@ PRODUCTS = [
         "description": "Complete Windows backup, installation, drivers setup, and optimization."
     },
     {
-        "name": "Biometric Machine Configuration",
+        "name": "Biometric Machine Intall and  Configuration",
         "category": "Services",
-        "price": "60 SAR",
+        "price": "600 SAR",
         "status": "Available",
         "description": "ZKTeco or any biometric machine IP configuration and software linking."
     }
