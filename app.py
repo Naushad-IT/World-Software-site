@@ -40,6 +40,20 @@ PRODUCTS = [
         "status": "Available",
         "description": "Complete Windows backup, installation, drivers setup, and optimization."
     },
+    {    
+        "name": "Cctv sell & Installation",
+        "category": "Services",
+        "price": "Not Available",
+        "status": "Available",
+        "description": "Complete work of cctv, ip camera, Analoge camera, survilance."
+    },
+    {   "name": "EPBX sell & Installation",
+        "category": "Services",
+        "price": "Not Available",
+        "status": "Available",
+        "description": "Complete work of epbx."
+    },
+
     {
         "name": "Biometric Machine Intall and  Configuration",
         "category": "Services",
