@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Software | Premium IT Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { background-color: #f4f6f9; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        .navbar { background: #1e293b !important; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .hero-banner { background: linear-gradient(135deg, #0f172a, #2563eb); color: white; padding: 80px 0; border-radius: 0 0 30px 30px; text-align: center; }
+        .product-card { border: none; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; background: white; }
+        .product-card:hover { transform: translateY(-8px); box-shadow: 0 10px 25px rgba(37,99,235,0.15); }
+        .badge-instock { background-color: #d1fae5; color: #065f46; font-weight: 600; }
+        .price-tag { font-size: 1.4rem; font-weight: 700; color: #2563eb; }
+        .btn-whatsapp { background-color: #25d366; color: white; font-weight: 600; border-radius: 8px; transition: 0.2s; }
+        .btn-whatsapp:hover { background-color: #20ba5a; color: white; }
+        .footer { background: #0f172a; color: #94a3b8; padding: 30px 0; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 text-white" href="#"><i class="fa-solid fa-laptop-code me-2 text-primary"></i>World Software</a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-2">
+                    <li class="nav-item"><a class="nav-link active text-white" href="#products">Products & Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-banner shadow">
+        <div class="container
+            <h1 class="display-4 fw-bold mb-3">Welcome to World Software</h1>
+            <p class="lead fs-4 opacity-75">Genuine Softwares, IT Services aur Network Solutions one of the best shop.</p>
+            <div class="mt-4">
+                <a href="#products" class="btn btn-light btn-lg fw-bold text-primary px-4 me-2 shadow-sm">View Catalog</a>
+                <a href="https://wa.me/966557626421" target="_blank" class="btn btn-outline-light btn-lg px-4 shadow-sm"><i class="fa-brands fa-whatsapp me-2"></i>Chat With Us</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5" id="products">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark display-6">Our Products & Premium Services</h2>
+            <p class="text-muted fs-5">Order any item you want directly by clicking on the WhatsApp button.</p>
+        </div>
+
+        <div class="row g-4">
+            {% for product in products %}
+            <div class="col-md-6 col-lg-4">
+                <div class="card product-card p-4 h-100 d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-secondary opacity-75 rounded-pill px-3 py-2">{{ product.category }}</span>
+                            <span class="badge badge-instock rounded-pill px-3 py-2">{{ product.status }}</span>
+                        </div>
+                        <h4 class="fw-bold text-dark mb-2">{{ product.name }}</h4>
+                        <p class="text-muted small mb-4">{{ product.description }}</p>
+                    </div>
+                    
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
+                            <span class="price-tag">{{ product.price }}</span>
+                            <a href="https://wa.me/966557626421?text=Hello%20World%20Software,%20mujhe%20'{{ product.name }}'%20ke%20baare%20me%20jaan-na%20hai." target="_blank" class="btn btn-whatsapp px-3 py-2 shadow-sm">
+                                <i class="fa-brands fa-whatsapp me-2"></i>Inquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="container my-5 pt-4" id="contact">
+        <div class="row g-4 bg-white p-4 rounded-4 shadow-sm align-items-center">
+            <div class="col-md-6">
+                <h3 class="fw-bold text-dark mb-3"><i class="fa-solid fa-location-dot text-danger me-2"></i>Contact Info</h3>
+                <p class="fs-5 text-muted mb-2"><strong>Shop Name:</strong> World Software</p>
+                <p class="text-muted mb-4">We provide professional service for all genuine operating systems, antivirus activation, and hardware troubleshooting.</p>
+                <div class="d-flex align-items-center gap-3 text-primary fw-bold fs-5 mb-2">
+                    <i class="fa-solid fa-phone"></i> <span>+966 557626421</span>
+                </div>
+                <div class="d-flex align-items-center gap-3 text-success fw-bold fs-5">
+                    <i class="fa-solid fa-envelope"></i> <span>info@worldsoftware.local</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29992.405240174423!2d42.57240891083985!3d20.006388600000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15f0290040e399cf%3A0x5aa79eeba35868c2!2z2YXYpNiz2LPYqSDZh9mK2KfYoSDYs9i52K8g2LnYqNivINin2YTZhNmHINin2YTZgtix2YbZiiDZhNmE2KrYrNin2LHYqQ!5e0!3m2!1sen!2ssa!4v1779802050506!5m2!1sen!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="mb-1 fw-bold text-white">© 2026 World Software. All Rights Reserved.</p>
+            <p class="mb-0 small opacity-50">Powered by Flask & Python on Custom Server</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
