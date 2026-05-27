@@ -11,47 +11,54 @@ PRODUCTS = [
         "category": "Operating System",
         "price": "Not Available",
         "status": "In Stock",
-        "description": "Original lifetime activation digital key with official support."
+        "description": "Original lifetime activation digital key with official support",
+        "image":"Windows11.jpg"
     },
     {   "name": "Laptop/PC General Maintance",
         "category": "Service",
         "price": "60 SAR",
         "status": "In Stock",
-        "description": "Original and Geniun work."
+        "description": "Original and Geniun work",
+        "image":"pc.jpg"
     },
     {
         "name": "Microsoft Office 2021 ad 2024 Pro Plus",
         "category": "Productivity",
         "price": "Not Available",
         "status": "In Stock",
-        "description": "Full version lifetime bind key for 1 PC."
+        "description": "Full version lifetime bind key for 1 PC",
+        "image":"office2021.jpg"
     },
     {
         "name": "Internet Security Antivirus (1 Year)",
         "category": "Cybersecurity",
         "price": "55 SAR",
         "status": "In Stock",
-        "description": "Complete protection against malware, ransomware, and phishing."
+        "description": "Complete protection against malware, ransomware, and phishing",
+        "image":"internet.jpg"
     },
     {
         "name": "Laptop/PC Formatting & OS Installation",
         "category": "Services",
         "price": "50 SAR",
         "status": "Available",
-        "description": "Complete Windows backup, installation, drivers setup, and optimization."
+        "description": "Complete Windows backup, installation, drivers setup, and optimization",
+        "image":"laptop.jpg"
     },
     {    
         "name": "Cctv sell & Installation",
         "category": "Services",
         "price": "Not Available",
         "status": "Available",
-        "description": "Complete work of cctv, ip camera, Analoge camera, survilance."
+        "description": "Complete work of cctv, ip camera, Analoge camera, survilance",
+        "image":"camera.jpg"
     },
     {   "name": "EPBX sell & Installation",
         "category": "Services",
         "price": "Not Available",
         "status": "Available",
-        "description": "Complete work of epbx."
+        "description": "Complete work of epbx",
+        "image":"pbx.jpg"
     },
 
     {
@@ -59,8 +66,9 @@ PRODUCTS = [
         "category": "Services",
         "price": "600 SAR",
         "status": "Available",
-        "description": "ZKTeco or any biometric machine IP configuration and software linking."
-    }
+        "description": "ZKTeco or any biometric machine IP configuration and software linking",
+        "image": "biomatric.jpg"
+    },
 ]
 
 @app.route('/')
