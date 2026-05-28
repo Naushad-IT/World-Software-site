@@ -3,8 +3,6 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# 📦 WORLD SOFTWARE PRODUCTS DATABASE (SAUDI RIYAL - SAR)
-# Aap yahan apni marzi se naye products jod sakte hain ya price badal sakte hain!
 PRODUCTS = [
     {
         "name": "Windows 11 Pro Retail Key",
@@ -76,6 +74,5 @@ def home():
     return render_template('index.html', products=PRODUCTS)
 
 if __name__ == '_main_':
-    # 🚀 HOSTING LOGIC: Yeh line server ka port automatically detect kar legi
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port, debug=True)
