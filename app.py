@@ -10,7 +10,7 @@ PRODUCTS = [
         "price": "Not Available",
         "status": "In Stock",
         "description": "Original lifetime activation digital key with official support",
-        "image":"Windows11.jpg"
+        "image": "Windows11.jpg"
     },
     {   "name": "Laptop/PC General Maintance",
         "category": "Service",
